@@ -12,7 +12,7 @@ router.get('/:city', async (req, res, next) => {
       ['longitude']: city.longitude,
       ['city']: city.city,
       ['stateCode']: city.stateCode,
-      ['contryCode']: city.countryCode,
+      ['countryCode']: city.countryCode,
     }));
     console.log(data);
     res.status(200).send(data);
@@ -31,7 +31,7 @@ router.get('/reverse/:lat/:lon', async (req, res, next) => {
       ['longitude']: city.longitude,
       ['city']: city.city,
       ['stateCode']: city.stateCode,
-      ['contryCode']: city.countryCode,
+      ['countryCode']: city.countryCode,
     }));
     console.log(data);
     // console.log(lat, lon);
